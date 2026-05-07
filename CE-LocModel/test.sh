@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python test_mul_box.py --checkpoint checkpoints/best_ckpt/best_model.pth  
