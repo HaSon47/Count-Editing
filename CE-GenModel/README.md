@@ -74,10 +74,14 @@ huggingface-cli download ostris/FLUX.1-schnell-training-adapter --local-dir ./ck
 * **CE-GEN train dataset**: [Download via Google Drive](https://drive.google.com/file/d/1iBoz4_rzd8hHnAuR3hF6WO5UTfUrQUZF/view?usp=sharing)
 
 3. Fine tune condition subject LoRA
+```bash
 python train_add_condition.py
+```
 
 4. Train denoising LoRA
+```bash
 python train_add_denoising.py
+```
 
 ### Removing task
 1. Load FLUX.1-schnell-training-assistant-LoRA (optional) 
@@ -99,6 +103,8 @@ huggingface-cli download ostris/FLUX.1-schnell-training-adapter --local-dir ./ck
 * **CE-GEN train dataset**: [Download via Google Drive](https://drive.google.com/file/d/1iBoz4_rzd8hHnAuR3hF6WO5UTfUrQUZF/view?usp=sharing)
 
 3. Train denoising LoRA
+```bash
 python train_remove_denoising.py
+```
 
 
